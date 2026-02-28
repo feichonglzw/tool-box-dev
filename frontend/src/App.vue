@@ -50,4 +50,21 @@ nav button { padding: 10px 20px; border: none; background: #fff; border-radius: 
 nav button:hover { transform: translateY(-2px); }
 nav button.active { background: #4CAF50; color: white; }
 main { background: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .container { padding: 15px; }
+  header h1 { font-size: 1.8em; }
+  nav { gap: 8px; }
+  nav button { padding: 8px 12px; font-size: 12px; }
+  main { padding: 15px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 10px; }
+  header h1 { font-size: 1.5em; }
+  nav { gap: 5px; justify-content: flex-start; overflow-x: auto; padding-bottom: 10px; }
+  nav button { padding: 8px 10px; font-size: 11px; white-space: nowrap; }
+  main { padding: 10px; border-radius: 8px; }
+}
 </style>
