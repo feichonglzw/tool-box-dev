@@ -33,7 +33,7 @@ public class TimestampController {
         } else if (datetime != null) {
             LocalDateTime dt = LocalDateTime.parse(datetime);
             result.put("datetime", datetime);
-            result.put("unix", dt.toEpochSecond(ZoneId.systemDefault()));
+            result.put("unix", dt.toEpochSecond(ZoneOffset.systemDefault()));
         }
         
         return result;
